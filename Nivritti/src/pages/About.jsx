@@ -12,22 +12,22 @@ const About = () => {
   ];
 
   const values = [
-    { 
+    {
       title: 'Financial Inclusion',
       description: 'Breaking barriers to make financial services accessible to everyone, regardless of their background.',
       icon: <FaUsers className="text-4xl" />
     },
-    { 
+    {
       title: 'Innovation First',
       description: 'Leveraging cutting-edge technology to create solutions that address real community needs.',
       icon: <FaLightbulb className="text-4xl" />
     },
-    { 
+    {
       title: 'Community Empowerment',
       description: 'Building platforms that enable communities to grow and prosper together.',
       icon: <FaHandshake className="text-4xl" />
     },
-    { 
+    {
       title: 'Sustainable Impact',
       description: 'Creating lasting positive change through responsible and sustainable practices.',
       icon: <FaSeedling className="text-4xl" />
@@ -35,25 +35,25 @@ const About = () => {
   ];
 
   const team = [
-    { 
-      name: 'Avira Srivastava',
+    {
+      name: 'Shweta Srivastava',
       role: 'CEO & Founder',
-      image: '/team/avira.jpg',
+      image: '/team/shweta.jpg',
       bio: 'Passionate about financial inclusion and community development.'
     },
-    { 
-      name: 'Avanish Dwivedi',
+    {
+      name: 'Ansh Srivastav',
       role: 'Chief Technology Officer',
-      image: '/team/avanish.jpg',
+      image: '/team/ansh.jpg',
       bio: 'Tech innovator with 15+ years in fintech solutions.'
     },
-    { 
+    {
       name: 'Ayansh Yadav',
       role: 'Head of Community',
       image: '/team/ayansh.jpg',
       bio: 'Expert in community engagement and program development.'
     },
-    { 
+    {
       name: 'Ayush Singh',
       role: 'Financial Director',
       image: '/team/ayush.jpg',
@@ -87,7 +87,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-[#f7edd4] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -102,8 +102,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-        
-          {/* Mission Section */}
+
+      {/* Mission Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -189,7 +189,7 @@ const About = () => {
         </div>
       </section>
 
-          {/* Values Section */}
+      {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -248,7 +248,7 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-      </div>
+    </div>
   );
 };
 
