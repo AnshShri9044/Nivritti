@@ -9,7 +9,7 @@ const EmailTest = () => {
     try {
       setLoading(true);
       setMessage('');
-      const response = await axios.get('http://localhost:5000/api/test/email');
+      const response = await axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000/api'}/test/email`);
       setMessage('Test email sent successfully! Please check your inbox.');
     } catch (error) {
       setMessage('Error sending test email: ' + error.message);
