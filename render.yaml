@@ -2,6 +2,7 @@ services:
   - type: web
     name: nivritti-backend
     env: node
+    plan: free
     rootDir: Nivritti/api
     buildCommand: npm install
     startCommand: npm start

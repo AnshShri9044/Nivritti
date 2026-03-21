@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #b4d9a3;
+  --primary-dark: #9bc589;
+  --secondary: #b28071;
+  --secondary-dark: #9d6d5f;
+  --background: #f7edd4;
+  --text-primary: #2c3e50;
+  --text-secondary: #34495e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Button Styles */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-[#b4d9a3] text-white hover:bg-[#9bc589];
+}
+
+.btn-secondary {
+  @apply bg-[#b28071] text-white hover:bg-[#9d6d5f];
+}
+
+.btn-outline {
+  @apply border-2 border-[#b4d9a3] text-[#b4d9a3] hover:bg-[#b4d9a3] hover:text-white;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-200;
+}
+
+.card-hover {
+  @apply hover:shadow-xl hover:transform hover:-translate-y-1;
+}
+
+/* Input Styles */
+.input {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b4d9a3] focus:border-transparent;
+}
+
+/* Link Styles */
+.link {
+  @apply text-[#b4d9a3] hover:text-[#9bc589] transition-colors duration-200;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-[#b4d9a3] via-[#b28071] to-[#b4d9a3] bg-clip-text text-transparent;
+}
+
+/* Background Gradients */
+.bg-gradient-primary {
+  @apply bg-gradient-to-r from-[#b4d9a3] to-[#9bc589];
+}
+
+.bg-gradient-secondary {
+  @apply bg-gradient-to-r from-[#b28071] to-[#9d6d5f];
+}
+
+/* Hover Effects */
+.hover-lift {
+  @apply transition-transform duration-200 hover:-translate-y-1;
+}
+
+.hover-scale {
+  @apply transition-transform duration-200 hover:scale-105;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Selection Color */
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* Focus Styles */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}

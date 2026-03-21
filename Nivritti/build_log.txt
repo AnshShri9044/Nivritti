@@ -1,0 +1,15 @@
+
+> nivritti@0.0.0 build
+> vite build
+
+[36mvite v6.3.2 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 17 modules transformed.
+[31m✗[39m Build failed in 662ms
+[31merror during build:
+[31mCould not resolve "./context/AuthContext" from "src/App.jsx"[31m
+file: [36mC:/Users/shriv/OneDrive/Desktop/Nivritti/Nivritti/src/App.jsx[31m
+    at getRollupError (file:///C:/Users/shriv/OneDrive/Desktop/Nivritti/Nivritti/node_modules/rollup/dist/es/shared/parseAst.js:397:41)
+    at error (file:///C:/Users/shriv/OneDrive/Desktop/Nivritti/Nivritti/node_modules/rollup/dist/es/shared/parseAst.js:393:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/shriv/OneDrive/Desktop/Nivritti/Nivritti/node_modules/rollup/dist/es/shared/node-entry.js:21328:24)
+    at file:///C:/Users/shriv/OneDrive/Desktop/Nivritti/Nivritti/node_modules/rollup/dist/es/shared/node-entry.js:21288:26[39m
