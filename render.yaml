@@ -2,7 +2,7 @@ services:
   - type: web
     name: nivritti-backend
     env: node
-    rootDir: api
+    rootDir: Nivritti/api
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -24,6 +24,7 @@ services:
   - type: web
     name: nivritti-frontend
     env: static
+    rootDir: Nivritti
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
